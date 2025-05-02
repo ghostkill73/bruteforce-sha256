@@ -1,0 +1,10 @@
+# dirs
+build/
+scripts/
+wordlists/
+test/
+
+# files
+*.bkp
+*.swp
+*~

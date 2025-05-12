@@ -224,6 +224,7 @@ type Threshold struct {
 }
 
 var checkThresholds = []Threshold{
+	{100, 1},				// <=100 lines		-> every password
 	{1000, 10},				// <=1,000 lines	-> every 10 passwords
 	{100000, 100},			// <=100,000 lines	-> every 100 passwords
 	{10000000, 1000},		// <=10M lines		-> every 1,000 passwords

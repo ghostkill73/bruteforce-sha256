@@ -5,7 +5,7 @@ set -eux
 ######################################################
 
 IN=main.go
-OUT=build/bsha256
+OUT=build/test
 
 GOARCH=amd64
 
@@ -31,4 +31,5 @@ go build \
 	-o "$OUT" \
 	-ldflags='-s -w -extldflags "-O3 -match=native"' \
 	-trimpath \
-	"$IN"
+	"$IN" &&
+		: "sucess."
